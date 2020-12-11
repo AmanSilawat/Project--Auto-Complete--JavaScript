@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown {
+            margin: 0px;
+            position: absolute;
+            list-style-type: none;
+            padding: 0px;
+            border-radius: 0 0 5px 5px;
+            overflow: hidden;
+            font-size: 16px;
+            max-height: 130px;
+            overflow-y: auto;
+        }
+
+        .dropdown li {
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #2f2f2f24;
+            padding: 4px 10px;
+            cursor: pointer;
+        }
+
+        .dropdown li:hover{
+            background-color: #d4d4d4;
+        }
+
+        .dropdown li:nth-last-child(1) {
+            border-bottom: none;
+        }
+
+        .dropdown.hide_ul{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="input1" class="search_txt" type="text" />
+    <input id="input2" class="search_txt" type="text" />
+    <script src="auto_complete.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
